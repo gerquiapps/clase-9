@@ -1,12 +1,18 @@
 import React from 'react';
-
+import Sphere from './clock-elements/sphere';
+import Hands from './clock-elements/hands';
+import Numbers from './clock-elements/numbers';
 export default class Clock extends React.Component {
-    render() {
-      return (
-        <div>
-          <h1>The time is:</h1>
-          <h2>It is {this.props.date.toLocaleTimeString()}.</h2>
-        </div>
-      );
-    }
+  constructor(props) {
+    super(props);
   }
+  render() {
+    return (
+      <div id="wrapper">
+        <Sphere />
+        <Numbers />
+        <Hands />
+      </div>
+    );
+  }
+}
