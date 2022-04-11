@@ -23,7 +23,7 @@ export default class Hands extends React.Component {
                 minutePosition: moment().minutes(),
                 hourPosition: moment().hours(),
             });
-            console.log(this.state.secondPosition, this.state.minutePosition, this.state.hourPosition);
+            // console.log(this.state.secondPosition, this.state.minutePosition, this.state.hourPosition);
             let seconds = this.calculateNumberPosition(this.state.secondPosition, 170, 60);
             let minutes = this.calculateNumberPosition(this.state.minutePosition, 170, 60);
             let hours = this.calculateNumberPosition(this.state.hourPosition, 170, 12);

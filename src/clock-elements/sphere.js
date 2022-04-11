@@ -1,4 +1,5 @@
 import React from "react";
+import Alarm from "./alarm";
 
 export default class Sphere extends React.Component {
 
@@ -8,7 +9,7 @@ export default class Sphere extends React.Component {
 
     componentDidMount() {
         this.draw();
-        this.drawCenter();  
+        this.drawCenter();
     }
 
     draw() {
@@ -23,7 +24,7 @@ export default class Sphere extends React.Component {
             ctx.lineWidth = 6;
             ctx.strokeStyle = '#FF0000';
             ctx.stroke();
-            
+
             ctx.beginPath();
             ctx.strokeStyle = 'black';
             ctx.lineWidth = 1;

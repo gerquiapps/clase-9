@@ -46,10 +46,21 @@
 
 #sphere,
 #numbers,
-#hands {
+#hands,
+#alarm-canvas {
   position: absolute;
   top     : 0px;
   left    : 0px;
   width   : 500px;
   height  : 500px;
+}
+
+#alarm-button {
+  position: absolute;
+  bottom  : -10px;
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto;
+  z-index: 9999999;
 }

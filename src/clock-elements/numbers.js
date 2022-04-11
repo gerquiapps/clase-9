@@ -31,7 +31,7 @@ export default class Numbers extends React.Component {
     drawNumbers() {
     
         for (let i = this.state.startNumber; i <= this.state.endNumber; i++) {
-            console.log(i);
+            // console.log(i);
             var canvas = document.getElementById("numbers");
             var ctx = canvas.getContext("2d");
             ctx.font = "48px Arial";
